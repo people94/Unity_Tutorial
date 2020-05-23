@@ -7,7 +7,7 @@ public class Test : MonoBehaviour
     Vector3 rotation;
     //public으로 하면 인스펙터창에서 뜬다
     [SerializeField] //강제로 인스펙터창에 띄운다
-    private GameObject go_camera;
+    private GameObject go_camera = null;
 
     void Start()
     {
