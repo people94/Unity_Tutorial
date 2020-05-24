@@ -42,7 +42,7 @@ public class MobileDpadTest : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         rect_JoyStick.localPosition = value;
 
         float distance = Vector2.Distance(rect_Background.position, rect_JoyStick.position) / radius;
-        value = value.normalized;   //속도는 빠지고 방향값만 남게된다. (50, 0, 30) -> (0,5, 0.3)
+      //  value = value.normalized;   //속도는 빠지고 방향값만 남게된다. (50, 0, 30) -> (0,5, 0.3)
         movePosition = new Vector3(value.x * moveSpeed * distance * Time.deltaTime, 0f, value.y * moveSpeed * distance * Time.deltaTime);
     }
 
